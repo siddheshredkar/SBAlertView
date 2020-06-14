@@ -27,7 +27,11 @@ class AlertTitleLabel: UILabel {
     }
     
     private func configure() {
-        textColor                   = .label // changes according to light or dark mode
+        if #available(iOS 13.0, *) {
+            textColor                   = .label
+        } else {
+            // Fallback on earlier versions
+        } // changes according to light or dark mode
         adjustsFontSizeToFitWidth   = true // how it scales to device/view
         minimumScaleFactor          = 0.9
         lineBreakMode               = .byTruncatingTail // keeps titles one line

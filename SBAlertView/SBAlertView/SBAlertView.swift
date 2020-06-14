@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-public class SBAlertView{
+public class SBAlertViewService{
     
     
     public init(){}

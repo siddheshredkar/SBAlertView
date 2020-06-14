@@ -30,7 +30,7 @@ s.framework = "UIKit"
 # s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
-s.source_files = "SBAlertView/**/*.{swift}"
+s.source_files = "SBAlertView/**/*.{h,m}"
 
 # 9
 # s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"

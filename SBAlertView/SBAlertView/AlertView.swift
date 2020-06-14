@@ -28,7 +28,11 @@ class AlertView: UIView {
     }
     
     private func configure() {
-        backgroundColor       = .systemBackground //changes according to light and dark mode
+        if #available(iOS 13.0, *) {
+            backgroundColor       = .systemBackground
+        } else {
+            // Fallback on earlier versions
+        } //changes according to light and dark mode
 //        layer.cornerRadius    = 16
 //        layer.borderWidth     = 2
 //        layer.borderColor     = UIColor.white.cgColor
