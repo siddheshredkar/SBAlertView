@@ -30,6 +30,7 @@ class AlertTitleLabel: UILabel {
         if #available(iOS 13.0, *) {
             textColor                   = .label
         } else {
+            textColor                  = .white
             // Fallback on earlier versions
         } // changes according to light or dark mode
         adjustsFontSizeToFitWidth   = true // how it scales to device/view
